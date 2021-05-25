@@ -1,0 +1,147 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home SportPro";
+}
+
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>THE SPORTS UNIVERSE</h1>
+        <p class="lead">Sports management software for the sport enthusiast. </p>
+        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <h2 Class="welcome"> Welcome to the SportsPro Technical support </h2>
+    <div class="container-fluid notify">
+        <div class=" row">
+            <div class=" col-12">
+                <p><strong>Latest sport news around the globe.</strong></p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="firstRow row">
+        <div class="col-md-4">
+            <img class="pic" src="~/Image/HarryKane.PNG">
+            <h2>Soccer news</h2>
+            <p>
+                Harry Kane has hinted that a move to Manchester City would appeal to him,
+                as he is eager to play alongside Kevin De Bruyne,
+                but has ruled out taking on a new challenge outside of England if he is to leave Tottenham.
+                <footer class="blockquote-footer">Oghenegare .P Uti</footer>
+            </p>
+            <p>
+                <a class="btn btn-default" href="https://www.sportingnews.com/ca/soccer/news/tottenham-harry-kane-man-city-transfer-option/jhrix23heh5z13cu43lhojy5d">Read more &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+
+            <img class="pic" src="~/Image/HockeyNews.PNG">
+            <h2>Hockey news</h2>
+            <p>
+                John Tavares is officially set to miss time for the Maple Leafs.
+
+                The Leafs provided an update on their captain's status Friday morning.
+                The team confirmed that Tavares was discharged from the hospital after an overnight stay but that he would be "out indefinitely" because of the injury.
+
+                <footer class="blockquote-footer">Mark Tierney</footer>
+            </p>
+            <p>
+                <a class="btn btn-default" href="https://www.sportingnews.com/ca/nhl/news/john-tavares-injury-update-maple-leafs-captain-out-indefinitely/1urjmcu2r51861p78syzob3q3d">Read more &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+
+            <img class="pic" src="~/Image/Basket.PNG">
+            <h2>NBA Latest</h2>
+            <p>
+                Welcome to May Madness.
+
+                The 2021 NBA playoff bracket is down to its usual 16 teams after a play-in tournament that featured both thrilling endings and brutal blowouts.
+                Now comes the constant barrage of postseason contests as contenders fight for the right to hold the Larry O'Brien trophy.
+
+                <footer class="blockquote-footer">Dzianis .D Tchishenka</footer>
+            </p>
+
+            <p>
+                <a class="btn btn-default" href="https://www.sportingnews.com/ca/nba/news/nba-playoff-games-today-2021-scores-schedule/zw8dl6exu1he1vx6k9mwz6gar">Read more &raquo;</a>
+            </p>
+        </div>
+    </div>
+
+    <br>
+    <hr />
+
+    <!----------------------------Admin/Technician session of the Home page------------------------------------------------------------>
+
+    <h1>Admin</h1>
+    <div class="list-group">
+        <a asp-controller="Product" asp-action="Index"
+           class="list-group-item">Manage Products</a>
+        <a asp-controller="Technician" asp-action="Index"
+           class="list-group-item">Manage Technicians</a>
+        <a asp-controller="Customer" asp-action="Index"
+           class="list-group-item">Manage Customers</a>
+        <a asp-controller="Incident" asp-action="Index"
+           class="list-group-item">Manage Incidents</a>
+        <a asp-controller="Registrations" asp-action="Index"
+           class="list-group-item">Manage Registrations</a>
+    </div>
+
+    <h1>Technicians</h1>
+    <div class="list-group">
+        <a asp-controller="UpdateIncident" asp-action="Index"
+           class="list-group-item">Update Incident</a>
+    </div>
+
+    <!-----------------------------------End of the Admin section of the Home Page---------------------------------------------------->
+    <br>
+    <hr />
+
+
+    <div class="row secondrow league-tables">
+        <div class="col-7">
+            <img class="pic2" src="~/Image/stanley cup1 pic.PNG" />
+        </div>
+    </div>
+    <hr />
+
+    <div class="row thirdrow league-tables">
+        <div class="col-7">
+            <img class="pic2" src="~/Image/premier league.PNG" />
+        </div>
+    </div>
+    <hr />
+
+    <div class="row forthrow league-tables">
+        <div class="col-7">
+            <img class="pic2" src="~/Image/Basket Ball.PNG" />
+        </div>
+    </div>
+    <hr />
+
+    <div class="row fifthrow league-tables">
+        <div class="col-7">
+            <img class="pic2" src="~/Image/Base Ball.PNG" />
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
