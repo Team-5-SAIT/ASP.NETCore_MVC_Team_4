@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SportsPro</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <a class="banner-logo" href="/"></a>
+                <div class="navbar-nav mr-auto">
+                    @if (ViewData["Title"].ToString() == "Home SportPro")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Home</a>}
+                    else
+                    {<a class="nav-item nav-link active" asp-controller="Home" asp-action="Index">Home</a>}
+
+                    @if (ViewData["Title"].ToString() == "Products")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Product" asp-action="Index">Products</a> }
+                    else
+                    { <a class="nav-item nav-link active" asp-controller="Product" asp-action="Index">Products</a>}
+
+                    @if (ViewData["Title"].ToString() == "Technicians")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Technician" asp-action="Index">Technicians</a>}
+                    else
+                    {<a class="nav-item nav-link active" asp-controller="Technician" asp-action="Index">Technicians</a>}
+
+                    @if (ViewData["Title"].ToString() == "Customers")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Customer" asp-action="Index">Customers</a>}
+                    else
+                    { <a class="nav-item nav-link active" asp-controller="Customer" asp-action="Index">Customers</a>}
+
+                    @if (ViewData["Title"].ToString() == "Incidents")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Incident" asp-action="Index">Incidents</a>}
+                    else
+                    { <a class="nav-item nav-link active" asp-controller="Incident" asp-action="Index">Incidents</a>}
+
+                    @if (ViewData["Title"].ToString() == "Registrations")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Registrations" asp-action="Index">Registrations</a>}
+                    else
+                    { <a class="nav-item nav-link active" asp-controller="Registrations" asp-action="Index">Registrations</a>}
+                </div>
+
+
+                <div class="navbar-nav navbar-right">
+                    @if (ViewData["Title"].ToString() == "About")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Home" asp-action="About">About</a>}
+                    else
+                    {<a class="nav-item nav-link active" asp-controller="Home" asp-action="About">About</a>}
+                    @if (ViewData["Title"].ToString() == "Register")
+                    {<a style="font-weight: 900;" class="nav-item nav-link active" asp-controller="Register" asp-action="Index">Register</a>}
+                    else
+                    {<a class="nav-item nav-link active" asp-controller="Register" asp-action="Index">Register</a> }
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                <li class="nav-item">
+                    <a class="nav-link nav-link active" asp-controller="Home" asp-action="Index" title="Welcome">Welcome @User.Identity.Name</a>
+                </li>
+                                <li class="nav-item">
+                                    <form class="form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home")">
+                                        <button type="submit" class="nav-link btn btn-link nav-link active">Logout</button>
+                                    </form>
+                                </li>
+ }
+                            else
+                            {
+                <li class="nav-item">
+                    <a class="nav-link nav-link active" asp-controller="Account" asp-action="Login">Login</a>
+                </li>
+}
+                    </ul>
+
+                </div>
+            </nav>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-5">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container"><p style="color:white;">&copy; @DateTime.Now.Year - SportsPro Team 4: All rights reserved.</p></div>
+    </footer>
+</body>
+</html>

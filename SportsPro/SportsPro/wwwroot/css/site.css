@@ -1,0 +1,176 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+h1 {
+    margin-top: 1rem;
+    font-size: 20pt;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 40px;
+}
+
+.navbar {
+    background-color: #01C28B;
+    color: gold;
+    padding-left: 0px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #01C28B;
+    color: white;
+    white-space: nowrap;
+    line-height: 40px; /* Vertically center the text there */
+    text-align: center;
+}
+
+
+
+
+/* From ASP.NET FRAMEWORK CSS ----------------------------------------------------------------------------*/
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+        background-image: url(../Image/Jumbotron.PNG);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* height: 400px;*/
+        background-color: black;
+        margin-top: 20px;
+        border-radius: 0.3rem;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-size: contain;
+        color: gold;
+        font: bold;
+    }
+
+        .jumbotron h1 {
+            margin-left: 60%;
+        }
+
+        .jumbotron p {
+            margin-left: 60%;
+        }
+
+    .btn-primary {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+
+    .banner-logo {
+        display: block;
+        /* path to image is relative to location of this css file */
+        background-image: url('../Image/SportsProLogo.PNG');
+        position: relative;
+        background-repeat: no-repeat;
+        /* margin-left: auto;*/
+        height: 37px;
+        width: 129px;
+    }
+
+    .navbar {
+        background-color: #01C28B;
+        color: gold;
+        padding-left: 0px;
+    }
+
+        .navbar li {
+            color: gold;
+        }
+
+
+    /*.footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        white-space: nowrap;
+        line-height: 50px;*/ /* Vertically center the text there */
+    /*background-color: #01C28B;
+        text-align: center;
+    }*/
+
+    .notify {
+        background-color: #01C28B;
+        height: 30px;
+    }
+
+    .welcome {
+        color: green;
+        margin-left: 25%;
+    }
+
+    .notify p {
+        color: white;
+        /*  font-weight: bold; margin-left: 20%;*/
+        text-align: center;
+    }
+
+    .league-tables {
+        margin-left: 30%;
+    }
+
+    .firstRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center, space-evenly;
+        justify-items: center;
+    }
+
+    /* .secondrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+        justify-items: center;
+    }*/
+
+    .pic {
+        height: 186px;
+        width: 300px;
+    }
+
+    .pic2 {
+        width: 588px;
+    }
+
+    hr {
+        background-color: #01C28B;
+    }
+}
+
+
+
